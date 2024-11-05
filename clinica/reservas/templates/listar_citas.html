@@ -1,0 +1,6 @@
+<h2>Lista de Citas</h2>
+<ul>
+    {% for cita in citas %}
+        <li>{{ cita.paciente.nombre }} - {{ cita.fecha }} a las {{ cita.hora }}</li>
+    {% endfor %}
+</ul>
